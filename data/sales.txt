@@ -1,0 +1,23 @@
+outfitter "CMI Basic Outfits"
+	"Cargo Scanner"
+	"Cooling Ducts"
+	"D14-RN Shield Generator"
+	"Energy Blaster"
+	Hyperdrive
+	"LP036a Battery Pack"
+	"LP072a Battery Pack"
+	"Local Map"
+	"Meteor Missile"
+	"Pilot's License"
+	"X1200 Ion Steering"
+	"X1700 Ion Thruster"
+	"X2200 Ion Steering"
+	"X2700 Ion Thruster"
+	"nGVF-AA Fuel Cell"
+	"nGVF-BB Fuel Cell"
+
+outfitter "CMI Advanced Outfits"
+	"Fission Reactor"
+	"Quad Blaster Turret"
+	"Scram Drive"
+

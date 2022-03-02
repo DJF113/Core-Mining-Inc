@@ -1,0 +1,17 @@
+ship "Splinter" "Splinter (Hai)"
+	outfits
+		`"Biroo" Atomic Steering`
+		`"Biroo" Atomic Thruster`
+		"Anti-Missile Turret"
+		"D67-TM Shield Generator"
+		"Geode Reactor"
+		Hyperdrive
+		"LP072a Battery Pack"
+		"LP144a Battery Pack"
+		"Laser Rifle"
+		"Outfits Expansion" 2
+		"Proton Gun" 2
+		"Proton Turret"
+		"Pulse Turret"
+		"Small Radar Jammer" 2
+		"Water Coolant System" 2
