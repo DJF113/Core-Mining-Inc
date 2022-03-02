@@ -12,12 +12,16 @@ as well.
 # Development Roadmap
 0.1.0
  -Basic functionality, and a foundation for future releases.
+
 0.2.0
  -Primary storyline finished.
+
 0.3.0
  -Alternate storyline finished.
+
 0.4.0
  -Small mission strings following the main stories.
+
 1.0.0
  -Full release.
 # Further Information
