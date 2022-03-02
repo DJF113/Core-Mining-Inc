@@ -8,7 +8,7 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-mission "Mission 5.1"
+mission "CMI S2 Investments 1"
 	landing
 	name "Meet up with Michael"
 	description "Go to <destination> and meet up with Michael."
@@ -16,7 +16,7 @@ mission "Mission 5.1"
 	destination Farseer
 	to offer
 		has "event: CMI Station 1: part 2"
-		has "Mission 4.7: done"
+		has "CMI S1 Supplies 7: done"
 	on offer
 		conversation
 			`	You receive a message from Michael: "Meet me here on <destination>. I have some urgent business for you."`
@@ -25,14 +25,14 @@ mission "Mission 5.1"
 		dialog
 			`Michael sends you a message on landing: "Meet me in the spaceport."`
 
-mission "Mission 5.2"
+mission "CMI S2 Investments 2"
 	name "Take Michael to Sunracer"
 	description "Ferry Michael to <destination>."
 	autosave
 	source Farseer
 	destination Sunracer
 	to offer
-		has "Mission 5.1: done"
+		has "CMI S2 Investments 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -53,14 +53,14 @@ mission "Mission 5.2"
 		dialog
 			"As you land on <destination>, a speedy hovercraft with the Megaparsec logo on it zips out to meet you. Michael hops in and they head back to the terminal. You get ready to head to the spaceport."
 
-mission "Mission 5.3"
+mission "CMI S2 Investments 3"
 	name "Ferry Michael and Executives"
 	description "Take Michael and some executives to <destination>."
 	autosave
 	source Sunracer
 	destination Hephaestus
 	to offer
-		has "Mission 5.2: done"
+		has "CMI S2 Investments 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -73,7 +73,7 @@ mission "Mission 5.3"
 		dialog
 			"You arrive at <destination> and drop off everyone at the terminal. After parking your ship, you head into the spaceport."
 
-mission "Mission 5.4"
+mission "CMI S2 Investments 4"
 	name "Parts on Geyser"
 	description "Pick up some parts on Geyser and deliver them to <destination>."
 	autosave
@@ -81,7 +81,7 @@ mission "Mission 5.4"
 	stopover Geyser
 	destination "Core Mining Station 1"
 	to offer
-		has "Mission 5.3: done"
+		has "CMI S2 Investments 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -99,14 +99,14 @@ mission "Mission 5.4"
 		dialog
 			"Several CMI employees unload the boxes from your cargo bay. In the meantime, you have received a message from John Summers asking you to meet him in the spaceport."
 
-mission "Mission 5.5"
+mission "CMI S2 Investments 5"
 	name "Pick up executives on <destination>"
 	description "Pick up Michael and the Megaparsec executives on <destination>."
 	autosave
 	source "Core Mining Station 1"
 	destination Hephaestus
 	to offer
-		has "Mission 5.4: done"
+		has "CMI S2 Investments 4: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -119,14 +119,14 @@ mission "Mission 5.5"
 		dialog
 			`You touch down safely on Hephaestus. "Michael will be waiting for us in the spaceport." he says.`
 
-mission "Mission 5.6"
+mission "CMI S2 Investments 6"
 	name "Ferry executives to <destination>"
 	description "Ferry Michael and some executives to <destination>."
 	autosave
 	source Hephaestus
 	destination Sunracer
 	to offer
-		has "Mission 5.5: done"
+		has "CMI S2 Investments 5: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -142,14 +142,14 @@ mission "Mission 5.6"
 		dialog
 			"You drop off everyone on the tarmac and head off to park your ship. In the meantime, you hear Michael's broadcast over the PA system."
 
-mission "Mission 5.7"
+mission "CMI S2 Investments 7"
 	name "Freighter Escort"
 	description "Escort some freighters carrying factory parts to <destination>."
 	autosave
 	source Sunracer
 	destination Stormhold
 	to offer
-		has "Mission 5.6: done"
+		has "CMI S2 Investments 6: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -201,7 +201,7 @@ mission "Mission 5.7"
 		fleet "Large Southern Pirates"
 		fleet "Small Southern Pirates"
 
-mission "Mission 6.1"
+mission "CMI S2 Jump Drive 1"
 	name "Korath Investigation"
 	description "Board a Korath Raider, take its jump drive, and then destroy the ship."
 	autosave
@@ -209,7 +209,7 @@ mission "Mission 6.1"
 	waypoint Durax
 	destination Stormhold
 	to offer
-		has "Mission 5.7: done"
+		has "CMI S2 Investments 7: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -241,14 +241,14 @@ mission "Mission 6.1"
 		dialog
 			"A group of scientists hustle the jump drive out of your cargo bay as soon as you land. You head to the spaceport for your next mission."
 
-mission "Mission 6.2"
+mission "CMI S2 Jump Drive 2"
 	name "Jumpy Drive Scientist"
 	description "Pick up a nervous scientist on <destination>"
 	autosave
 	source Stormhold
 	destination Tinker
 	to offer
-		has "Mission 6.1: done"
+		has "CMI S2 Jump Drive 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -269,14 +269,14 @@ mission "Mission 6.2"
 		dialog
 			"You arrive on <destination> and head to the spaceport to meet with the scientist."
 
-mission "Mission 6.3"
+mission "CMI S2 Jump Drive 3"
 	name "Jumpy Drive Scientist II"
 	description "Take the scientist back to <destination>"
 	autosave
 	source Tinker
 	destination Stormhold
 	to offer
-		has "Mission 6.2: done"
+		has "CMI S2 Jump Drive 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -304,14 +304,14 @@ mission "Mission 6.3"
 		dialog
 			"You drop off the scientist on <destination> and head for the spaceport."
 
-mission "Mission 6.4"
+mission "CMI S2 Investments 8"
 	name "Freighter Escort Duty"
 	description "Escort a group of freighters to <destination> to pick up some parts for the new Megaparsec factory."
 	autosave
 	source Stormhold
 	destination Asgard
 	to offer
-		has "Mission 6.3: done"
+		has "CMI S2 Jump Drive 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -345,14 +345,14 @@ mission "Mission 6.4"
 		ship Manta CMI-021
 		ship Manta CMI-644
 
-mission "Mission 6.5"
+mission "CMI S2 Investments 9"
 	name "Freighter Escort Duty II"
 	description "Escort the freighters back to <destination>"
 	autosave
 	source Asgard
 	destination Stormhold
 	to offer
-		has "Mission 6.4: done"
+		has "CMI S2 Investments 8: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -395,14 +395,14 @@ mission "Mission 6.5"
 		ship Firebird "Revenge of the Shackled"
 		ship Wasp "Ravenna's Revenge"
 
-mission "Mission 6.6"
+mission "CMI S2 Investments 10"
 	name "Michael to Mainsail."
 	description "Take Michael to <destination> to get more funding for CMI"
 	autosave
 	source Stormhold
 	destination Mainsail
 	to offer
-		has "Mission 6.5: done"
+		has "CMI S2 Investments 9: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -430,7 +430,7 @@ mission "Mission 6.6"
 		dialog
 			`You touch down on <destination>. "Meet me in the spaceport bar in about an hour and a half!" he says.`
 
-mission "Mission 6.7"
+mission "CMI S2 Investments 11"
 	name "Fundraising Trip"
 	description "Take Michael around to several systems to try to raise more money for CMI."
 	autosave
@@ -442,7 +442,7 @@ mission "Mission 6.7"
 	stopover Calda
 	destination Vinci
 	to offer
-		has "Mission 6.6: done"
+		has "CMI S2 Investments 10: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -465,14 +465,14 @@ mission "Mission 6.7"
 		dialog
 			"As Michael climbs out, he calls back to you to meet him in the spaceport in a little while."
 
-mission "Mission 7.1"
+mission "CMI S2 Scientist 1"
 	name "Corporate Bartering"
 	description "Travel to Free Worlds space to try to convince a scientist to work for CMI."
 	autosave
 	source Vinci
 	destination Bourne
 	to offer
-		has "Mission 6.7: done"
+		has "CMI S2 Investments 11: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -488,14 +488,14 @@ mission "Mission 7.1"
 		dialog
 			"You arrive on <destination>. Michael tells you to wait around the spaceport and find something to do while he meets with the Free Worlds council."
 
-mission "Mission 7.2"
+mission "CMI S2 Scientist 2"
 	name "Free Worlds Help"
 	description "Help the Free Worlds defeat a pirate attack."
 	autosave
 	source Bourne
 	destination Bourne
 	to offer
-		has "Mission 7.1: done"
+		has "CMI S2 Scientist 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc kill
@@ -558,14 +558,14 @@ mission "Mission 7.2"
 		dialog
 			"The Free Worlds officer thanks you for helping and gives you <payment>."
 
-mission "Mission 7.3"
+mission "CMI S2 Scientist 3"
 	name "Scientist to Stormhold"
 	description "Take the Free Worlds scientist to <destination>"
 	autosave
 	source Bourne
 	destination Stormhold
 	to offer
-		has "Mission 7.2: done"
+		has "CMI S2 Scientist 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -594,7 +594,7 @@ mission "Mission 7.3"
 		dialog
 			`You drop off Doctor Watkins and Michael at the landing pad, then park your ship. You get a notification from Michael. "Meet me in the spaceport when you're ready to go on another trip.`
 
-mission "Mission 7.4"
+mission "CMI S2 Scientist 4"
 	name "Material Pickup"
 	description "Escort a ship to Quicksilver to pick up some materials, then bring it safely back to Stormhold."
 	autosave
@@ -602,7 +602,7 @@ mission "Mission 7.4"
 	stopover Quicksilver
 	destination Stormhold
 	to offer
-		has "Mission 7.3: done"
+		has "CMI S2 Scientist 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc accompany save
@@ -642,7 +642,7 @@ mission "Mission 7.4"
 		dialog
 			`You get a message from John Summers. "Glad to see you back! I've got another job for you, meet me in the spaceport to discuss it.`
 
-mission "Mission 7.5"
+mission "CMI S2 Scientist 5"
 	name "Pick up Materials"
 	description "Escort a ship to <stopover> and pick up some materials for the project."
 	autosave
@@ -650,7 +650,7 @@ mission "Mission 7.5"
 	stopover Hippocrates
 	destination Stormhold
 	to offer
-		has "Mission 7.4: done"
+		has "CMI S2 Scientist 4: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc accompany save
@@ -703,14 +703,14 @@ mission "Mission 7.5"
 		dialog
 			"You don't get any messages as you're landing, but an armored vehicle arrives to pick up your cargo. You decide to head to the spaceport and see if anyone is there."
 
-mission "Mission 7.6"
+mission "CMI S2 Moving 1"
 	name "Shareholder Meeting"
 	description "Take Michael to a shareholder meeting on <destination>"
 	autosave
 	source Stormhold
 	destination Hephaestus
 	to offer
-		has "Mission 7.5: done"
+		has "CMI S2 Scientist 5: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -750,7 +750,7 @@ mission "Mission 7.6"
 		dialog
 			"Michael tells you to wait around the spaceport until the meeting is over."
 
-mission "Mission 7.7"
+mission "CMI S2 Moving 2"
 	name "Michael to Stormhold"
 	description "Take Michael back to <destination>"
 	autosave
@@ -758,7 +758,7 @@ mission "Mission 7.7"
 	stopover "Core Mining Station 1"
 	destination Stormhold
 	to offer
-		has "Mission 7.6: done"
+		has "CMI S2 Moving 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -777,14 +777,14 @@ mission "Mission 7.7"
 		dialog
 			"Michael chats with you on the flight back, and tells you to meet him in the spaceport for your next mission."
 
-mission "Mission 8.1"
+mission "CMI S2 Moving 3"
 	name "Moving Day"
 	description "Escort the ships carrying the partially finished reactor project to another test facility."
 	autosave
 	source Stormhold
 	destination Keselrig
 	to offer
-		has "Mission 7.7: done"
+		has "CMI S2 Moving 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc accompany save
@@ -807,14 +807,14 @@ mission "Mission 8.1"
 		dialog
 			"You escort the freighters safely to the new facility, then head to the spaceport to see if Michael has any more instructions for you."
 
-mission "Mission 8.2"
+mission "CMI S2 Moving 4"
 	name "Parts Pickup"
 	description "Run to <destination> to pick up some important parts for the project."
 	autosave
 	source Keselrig
 	destination Midgard
 	to offer
-		has "Mission 8.1: done"
+		has "CMI S2 Moving 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc evade
@@ -830,14 +830,14 @@ mission "Mission 8.2"
 		dialog
 			"You notice a Syndicate ship that seems to be following you. You decide to let Michael know about it."
 
-mission "Mission 8.3"
+mission "CMI S2 Moving 5"
 	name "Evasive Actions"
 	description "Lose a Syndicate ship that seems to be following you."
 	autosave
 	source Midgard
 	destination "Core Mining Station 1"
 	to offer
-		has "Mission 8.2: done"
+		has "CMI S2 Moving 4: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc evade
@@ -849,17 +849,18 @@ mission "Mission 8.3"
 			"	You contact Michael from the spaceport. He sounds worried, and tells you to try to lose them by landing on <destination> and unloading some miscellaneous boxes there."
 				accept
 	on complete
+		event "fw southern expansion"
 		dialog
 			"The ship was still following you on the way back, so you decide to contact Michael again."
 
-mission "Mission 8.4"
+mission "CMI S2 Moving 6"
 	name "Evasive Actions II"
 	description "See if the plan of unloading empty crate at the staion worked."
 	autosave
 	source "Core Mining Station 1"
 	destination Keselrig
 	to offer
-		has "Mission 8.3: done"
+		has "CMI S2 Moving 5: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -872,14 +873,14 @@ mission "Mission 8.4"
 		dialog
 			"The Syndicate pilot was still busy watching the crates sitting on the dock, so you were able to leave before they were ready. You head to the spaceport to meet up with Michael."
 
-mission "Mission 8.5"
+mission "CMI S2 Moving 7"
 	name "Bounty Hunting"
 	description "Destroy the <npc>, a ship that has been bothering CMI freighters. It was last seen heading to the Sumar system."
 	autosave
 	source Keselrig
 	destination Stormhold
 	to offer
-		has "Mission 8.4: done"
+		has "CMI S2 Moving 6: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc kill
@@ -930,14 +931,14 @@ mission "Mission 8.5"
 		dialog
 			`You get a message from Michael as you arrive. "Meet me in the spaceport."`
 
-mission "Mission 8.6"
+mission "CMI S2 Moving 8"
 	name "Michael to <destination>"
 	description "Take Michael to <destination>"
 	autosave
 	source Stormhold
 	destination Keselrig
 	to offer
-		has "Mission 8.5: done"
+		has "CMI S2 Moving 7: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -968,7 +969,7 @@ mission "Mission 8.6"
 			`	"You're welcome. Now go enjoy your time off!"`
 				accept
 
-mission "Mission 8.7"
+mission "CMI Hostile Takeover 1"
 	name "Meet John on <destination>"
 	description "Head to <destination> to meet John Summers."
 	autosave
@@ -976,7 +977,7 @@ mission "Mission 8.7"
 	destination Stormhold
 	to offer
 		has "event: Storyline A Event"
-		has "Mission 8.6: done"
+		has "CMI S2 Moving 8: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -989,14 +990,14 @@ mission "Mission 8.7"
 		dialog
 			`You receive a message from John, "Glad you could make it. Meet me in the spaceport."`
 
-mission "Mission 8.8"
+mission "CMI Hostile Takeover 2"
 	name "Flee to Republic"
 	description "Flee to Republic space to avoid the plot against you."
 	autosave
 	source "Stormhold"
 	destination "Valhalla"
 	to offer
-		has "Mission 8.7: done"
+		has "CMI Hostile Takeover 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	npc accompany save

@@ -8,13 +8,14 @@
 # WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 # PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-mission "Mission 1.1"
+mission "CMI Taxi 1"
 	name "Taxi Captain"
 	description "Ferry this man to <destination>."
 	autosave
 	passengers 1
 	landing
-	source Maker
+	source
+		near "Delta Capricorni" 1 2
 	destination Tinker
 	to fail
 		has "chosen sides"
@@ -39,7 +40,7 @@ mission "Mission 1.1"
 		dialog
 			`You land at <destination>'s spaceport. "Thanks for the ride!" says Michael, giving you <payment>. "If you'd like to help me out some more, meet me in the spaceport."`
 
-mission "Mission 1.2"
+mission "CMI Taxi 2"
 	name "Taxi Captain II"
 	description "Ferry Michael Washington to <destination>."
 	autosave
@@ -47,7 +48,7 @@ mission "Mission 1.2"
 	source Tinker
 	destination Reunion
 	to offer
-		has "Mission 1.1: done"
+		has "CMI Taxi 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -66,7 +67,7 @@ mission "Mission 1.2"
 		dialog
 			`You touch down at <destination>. "Here you go." says Michael, handing you <payment>, "Meet me in the spaceport if you would like to continue helping me out."`
 
-mission "Mission 1.3"
+mission "CMI Taxi 3"
 	name "Taxi Captain III"
 	description "Ferry Michael Washington to <destination>."
 	autosave
@@ -74,7 +75,7 @@ mission "Mission 1.3"
 	source Reunion
 	destination Foundry
 	to offer
-		has "Mission 1.2: done"
+		has "CMI Taxi 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -90,7 +91,7 @@ mission "Mission 1.3"
 		dialog
 			`Michael hands you <payment>. "Meet me in the spaceport in an hour if you want to take me on one more run." he says.`
 
-mission "Mission 1.4"
+mission "CMI Taxi 4"
 	name "Taxi Captain IV"
 	description "Take Michael to <destination>."
 	autosave
@@ -98,7 +99,7 @@ mission "Mission 1.4"
 	source Foundry
 	destination Moonshake
 	to offer
-		has "Mission 1.3: done"
+		has "CMI Taxi 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -132,7 +133,7 @@ mission "Mission 1.4"
 		dialog
 			`As soon as you touch down, Michael jumps out of your ship and heads to the spaceport complex. "I left your payment on my seat!" he shouts over his shoulder. "Meet me in the spaceport to find out what happens!"`
 
-mission "Mission 1.5"
+mission "CMI Taxi 5"
 	name "Business trip to <destination>."
 	description "Take Michael to <destination> to apply for a business license."
 	autosave
@@ -140,7 +141,7 @@ mission "Mission 1.5"
 	source Moonshake
 	destination Hephaestus
 	to offer
-		has "Mission 1.4: done"
+		has "CMI Taxi 4: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -157,14 +158,14 @@ mission "Mission 1.5"
 		dialog
 			`Michael has been on the edge of his seat the entire way, chattering nonstop and spouting off all sorts of technical jargon. "Stick around and meet me in the spaceport." he says as he climbs out. "If everything works out, I could use someone like you. If it doesn't, I'll need a ride back home."`
 
-mission "Mission 1.6"
+mission "CMI Taxi 6"
 	name "Pick up cargo at <destination>."
 	description "Pick up some technicians and cargo at <destination>"
 	autosave
 	source Hephaestus
 	destination Millrace
 	to offer
-		has "Mission 1.5: done"
+		has "CMI Taxi 5: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -180,14 +181,14 @@ mission "Mission 1.6"
 		dialog
 			"You land safely at <destination>. You should meet the technicians in the spaceport."
 
-mission "Mission 1.7"
+mission "CMI Taxi 7"
 	name "Cargo Delivery"
 	description "Deliver cargo to <destination>."
 	autosave
 	source Millrace
 	destination Trove
 	to offer
-		has "Mission 1.6: done"
+		has "CMI Taxi 6: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -203,14 +204,14 @@ mission "Mission 1.7"
 			`	"I'd like to talk to you about something," says Michael, "You've been taking me around here and there for a while and I really like your skillset. I'd like to offer you a job with CMI as a contract pilot. I just want you to try it out for a little while and see if you like it. Your salary is starting out at 5000 cr."`
 			`	Michael steps back out of the ship, leaving you somewhat confused as to what just happened. Suddenly Michael's head appears around the corner. "Meet me in the ship we're using as a spaceport and lounge in about 30 minutes to talk some business." he says, then heads off to scold a worker for dropping a crate.`
 
-mission "Mission 2.1"
+mission "CMI Taxi 8"
 	name "Mining Equipment Pickup"
 	description "Go to <destination> and meet a few ships of parts for the project."
 	autosave
 	source Trove
 	destination Ada
 	to offer
-		has "Mission 1.7: done"
+		has "CMI Taxi 7: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -244,17 +245,18 @@ mission "Mission 2.1"
 					decline
 	on complete
 		event "CMI fleet addon 1"
+		event "oathkeepers founded"
 		dialog
 			"You land on <destination>. You should probably meet the ship captains in the spaceport."
 
-mission "Mission 2.2"
+mission "CMI Taxi 9"
 	name "Escort freighters to <destination>"
 	description "Escort two freighters to <destination>."
 	autosave
 	source Ada
 	destination Trove
 	to offer
-		has "Mission 2.1: done"
+		has "CMI Taxi 8: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -265,6 +267,7 @@ mission "Mission 2.2"
 		dialog
 			"You've reached <destination> but you've left the freighters behind! Better take off and wait for them to arrive!"
 	on complete
+		event "Tarazed neutrality"
 		dialog
 			`Michael is waiting at the landing pad as you touch down with the freighters. "Glad you made it!" he says. "Meet me in the spaceport in a few minutes. I have another job for you."`
 	npc accompany save
@@ -278,7 +281,7 @@ mission "Mission 2.2"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 
-mission "Mission 2.3"
+mission "CMI Taxi 10"
 	name "Secret Project"
 	description "Go to <destination> to pick up parts for a secret project."
 	autosave
@@ -287,7 +290,7 @@ mission "Mission 2.3"
 	stopover Maker
 	destination Trove
 	to offer
-		has "Mission 2.2: done"
+		has "CMI Taxi 9: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -335,14 +338,14 @@ mission "Mission 2.3"
 			`	You ask the bartender where everyone is. He laughs and says, "Didn't you notice the new spaceport on the other side of the landing pads? They just opened it up!"`
 			"	You feel somewhat foolish for not noticing the large lit up sign over the new spaceport door."
 
-mission "Mission 2.4"
+mission "CMI Taxi 11"
 	name "Secret Project II"
 	description "Meet a convoy of merchant ships and escort them back to Trove."
 	autosave
 	source Trove
 	destination "New Wales"
 	to offer
-		has "Mission 2.3: done"
+		has "CMI Taxi 10: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -357,14 +360,14 @@ mission "Mission 2.4"
 		dialog
 			"You should probably meet up with the convoy captains in the spaceport."
 
-mission "Mission 2.5"
+mission "CMI Taxi 12"
 	name "Secret Project II"
 	description "Escort the merchant convoy back to <destination>"
 	autosave
 	source "New Wales"
 	destination Trove
 	to offer
-		has "Mission 2.4: done"
+		has "CMI Taxi 11: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on visit
@@ -406,7 +409,7 @@ mission "Mission 2.5"
 		fleet "Large Southern Pirates"
 		fleet "Large Southern Pirates"
 
-mission "Mission 2.6"
+mission "CMI Taxi 13"
 	name "Secret Project III"
 	description "Pick up some items on Hermes for use in the secret space station project."
 	autosave
@@ -415,7 +418,7 @@ mission "Mission 2.6"
 	stopover Hermes
 	destination Trove
 	to offer
-		has "Mission 2.5: done"
+		has "CMI Taxi 12: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -467,14 +470,14 @@ mission "Mission 2.6"
 		dialog
 			`	Michael meets you on the tarmac as you touch down. "Once you get everything unloaded, meet me in the spaceport. I need you to take me on a run." he says.`
 
-mission "Mission 2.7"
+mission "CMI Taxi 14"
 	name "Fishing for investors"
 	description "Take Michael to <destination> to find more investors for CMI."
 	autosave
 	source Trove
 	destination Reunion
 	to offer
-		has "Mission 2.6: done"
+		has "CMI Taxi 13: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -492,14 +495,14 @@ mission "Mission 2.7"
 		dialog
 			`	Michael climbs out of the ship when you land and heads for the spaceport. "Meet me at the space port in an hour or two." he calls over his shoulder.`
 
-mission "Mission 3.1"
+mission "CMI Pirate Raids 1"
 	name "Threatening pirates"
 	description "Hurry back to <destination> and investigate the increasing pirate activity."
 	autosave
 	source Reunion
 	destination Trove
 	to offer
-		has "Mission 2.7: done"
+		has "CMI Taxi 14: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -510,17 +513,19 @@ mission "Mission 3.1"
 				`	"Let's go!"`
 					accept
 	on complete
+		event "catalytic ramscoop available"
+		event "fw gets catalytic ramscoop"
 		dialog
 			"	You don't notice any more pirates than normal in the area but Michael tells you that they are mostly massed in the Sheratan system. You should head to the spaceport to meet with the other captains."
 
-mission "Mission 3.2"
+mission "CMI Pirate Raids 2"
 	name "Pirate Attack"
 	description "Defeat the pirates attacking the system."
 	autosave
 	source Trove
 	destination Trove
 	to offer
-		has "Mission 3.1: done"
+		has "CMI Pirate Raids 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -557,14 +562,14 @@ mission "Mission 3.2"
 		ship Argosy CMI-157
 		ship Argosy CMI-972
 
-mission "Mission 3.3"
+mission "CMI Pirate Raids 3"
 	name "Look for help"
 	description "Take Michael <destination> to ask for help to defeat the pirates."
 	autosave
 	source Trove
 	destination Hephaestus
 	to offer
-		has "Mission 3.2: done"
+		has "CMI Pirate Raids 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -578,14 +583,14 @@ mission "Mission 3.3"
 		dialog
 			`	"I'll only be a minute" says Michael. "Meet me in the spaceport"`
 
-mission "Mission 3.4"
+mission "CMI Pirate Raids 4"
 	name "Hire Mercs"
 	description "Head to <destination> to hire some mercs for the upcoming battle."
 	autosave
 	source Hephaestus
 	destination Amazon
 	to offer
-		has "Mission 3.3: done"
+		has "CMI Pirate Raids 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -602,14 +607,14 @@ mission "Mission 3.4"
 		dialog
 			`	You land on Amazon and as you get your ship shut down Michael heads to the spaceport. "Meet me as soon as you can." he says.`
 
-mission "Mission 3.5"
+mission "CMI Pirate Raids 5"
 	name "Defend Hamal"
 	description "Fly back to <destination> with the mercs and defend it from the pirates."
 	autosave
 	source Amazon
 	destination Trove
 	to offer
-		has "Mission 3.4: done"
+		has "CMI Pirate Raids 4: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -664,7 +669,7 @@ mission "Mission 3.5"
 		ship Sparrow
 		ship Sparrow
 
-mission "Mission 3.6"
+mission "CMI Pirate Raids 6"
 	name "Attack on Stormhold"
 	description "Attack the pirate stronghold."
 	autosave
@@ -672,7 +677,7 @@ mission "Mission 3.6"
 	clearance
 	destination Stormhold
 	to offer
-		has "Mission 3.5: done"
+		has "CMI Pirate Raids 5: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -728,7 +733,7 @@ mission "Mission 3.6"
 	on visit
 		dialog "The pirates have not been defeated yet. You should take off and finish them off."
 
-mission "Mission 3.7"
+mission "CMI Pirate Raids 7"
 	name "Mop Up Duty"
 	description "Head to the two pirate systems adjacent to Alcyone and take care of the pirate fleets reported there."
 	autosave
@@ -738,7 +743,7 @@ mission "Mission 3.7"
 	destination Stormhold
 	clearance
 	to offer
-		has "Mission 3.6: done"
+		has "CMI Pirate Raids 6: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -819,14 +824,14 @@ mission "Mission 3.7"
 		fleet "Small Southern Pirates"
 		dialog "The main pirate fleet in this system has been destroyed."
 
-mission "Mission 4.1"
+mission "CMI Pirate Raids 8"
 	name "Claiming Pirate Systems"
 	description "Take Micahel and John to <destination> to file a claim on the captured systems."
 	autosave
 	source Stormhold
 	destination Hephaestus
 	to offer
-		has "Mission 3.7: done"
+		has "CMI Pirate Raids 7: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -854,14 +859,14 @@ mission "Mission 4.1"
 		dialog
 			`"Meet us in the spaceport!" Michael says as he and John climb out of <ship>.`
 
-mission "Mission 4.2"
+mission "CMI S1 Supplies 1"
 	name "Supply Pickup"
 	description "Head to <destination> to pick up supplies to mine Stormhold."
 	autosave
 	source Hephaestus
 	destination Trove
 	to offer
-		has "Mission 4.1: done"
+		has "CMI Pirate Raids 8: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -889,14 +894,14 @@ mission "Mission 4.2"
 		dialog
 			"	You land on <destination>. You should check to see if anyone is waiting in the spaceport."
 
-mission "Mission 4.3"
+mission "CMI S1 Supplies 2"
 	name "Supplies to <destination>"
 	description "Take a shipment of supplies and people to <destination>."
 	autosave
 	source Trove
 	destination Stormhold
 	to offer
-		has "Mission 4.2: done"
+		has "CMI S1 Supplies 1: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -908,7 +913,7 @@ mission "Mission 4.3"
 		dialog
 			`	You drop off your cargo and the passengers on <destination>. As you were landing, Michael sent you a message. "Meet me in the spaceport whenever you're ready to make another run."`
 
-mission "Mission 4.4"
+mission "CMI S1 Supplies 3"
 	name "Defense System Pickup"
 	description "Go to <destination> to pick up some vital components for the space station."
 	autosave
@@ -916,7 +921,7 @@ mission "Mission 4.4"
 	destination Pilot
 	clearance
 	to offer
-		has "Mission 4.3: done"
+		has "CMI S1 Supplies 2: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -929,14 +934,14 @@ mission "Mission 4.4"
 		dialog
 			`You land on Pilot, where a group of engineers carefully load a box marked "Fragile" on board your ship. One of them turns to you. "While they're tying the box down, meet us in the spaceport and we'll give you some instructions."`
 
-mission "Mission 4.5"
+mission "CMI S1 Supplies 4"
 	name "Defense System to Station"
 	description "Take the defense system to the new space station."
 	autosave
 	source Pilot
 	destination "Core Mining Station 1"
 	to offer
-		has "Mission 4.4: done"
+		has "CMI S1 Supplies 3: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -950,14 +955,14 @@ mission "Mission 4.5"
 		dialog
 			`You land on the station, noticing how all of the parts are modular for ease of transport into orbit. Michael meets you at the loading bay. "I'm glad you got this thing here safely." he says. "Our competitors would love to get their hands on this defense system. Once you get everything taken care of, meet me in the spaceport."`
 
-mission "Mission 4.6a"
+mission "CMI S1 Supplies 5"
 	name "Electronics Pickup"
 	description "Go to Tinker in the Diphda system to pick up electronics for the new space station."
 	autosave
 	source "Core Mining Station 1"
 	destination Tinker
 	to offer
-		has "Mission 4.5: done"
+		has "CMI S1 Supplies 4: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -967,7 +972,7 @@ mission "Mission 4.6a"
 				`	"I'm on my way!"`
 					accept
 
-mission "Mission 4.6b"
+mission "CMI S1 Supplies 6"
 	name "Electronics Delivery"
 	description "Take some electronics to <destination>."
 	landing
@@ -975,7 +980,7 @@ mission "Mission 4.6b"
 	source Tinker
 	destination "Core Mining Station 1"
 	to offer
-		has "Mission 4.6a: done"
+		has "CMI S1 Supplies 5: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
@@ -986,7 +991,7 @@ mission "Mission 4.6b"
 		dialog
 			`	Michael sends you a message upon your arrival: "Meet me in the spaceport as soon as you can."`
 
-mission "Mission 4.7"
+mission "CMI S1 Supplies 7"
 	name "Gold Rush"
 	description "Take some gold found during mining operations to <destination> where an investor will meet you."
 	autosave
@@ -994,7 +999,7 @@ mission "Mission 4.7"
 	stopover Stormhold
 	destination Farseer
 	to offer
-		has "Mission 4.6b: done"
+		has "CMI S1 Supplies 6: done"
 	on fail
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
