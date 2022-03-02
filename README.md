@@ -1,6 +1,6 @@
 # Core Mining, Inc.
 The Core Mining, Inc. mod adds a storyline that offers you the chance to work for a newly
-started company called Core Mining. You start with them from the very beginning and help build
+started company by the same name. You start with them from the very beginning and help build
 up the company. Along the way, you can make different choices which may impact the game at a
 later time, as well as potentially make major changes to the plotline. Not everything is in
 place yet, but I'm hoping to make a plugin that fits in seamlessly with the vanilla game.
