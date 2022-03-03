@@ -25,4 +25,8 @@ as well.
 1.0.0
  -Full release.
 # Further Information
+Do you have any questions, comments or bugs, or just want to chat? Check out the Core Mining Discord in the link below.
+
 Discord: https://discord.com/invite/EjF6Zhpc5C
+
+Before filing a bug report, please check the Known Issues section at the bottom of the Readme to confirm that your issue has not been reported already.
