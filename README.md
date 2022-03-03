@@ -25,3 +25,4 @@ as well.
 1.0.0
  -Full release.
 # Further Information
+Discord: https://discord.com/invite/EjF6Zhpc5C
