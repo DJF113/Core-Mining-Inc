@@ -5,3 +5,5 @@
 .gitignore export-ignore
 
 README.md export-ignore
+
+/devupdates export-ignore
