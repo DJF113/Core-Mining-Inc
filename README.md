@@ -30,3 +30,6 @@ Do you have any questions, comments or bugs, or just want to chat? Check out the
 Discord: https://discord.com/invite/EjF6Zhpc5C
 
 Before filing a bug report, please check the Known Issues section at the bottom of the Readme to confirm that your issue has not been reported already.
+
+## Developer Updates
+[2022.03.05](https://github.com/DJF113/Core-Mining-Inc/blob/main/devupdates/devupdate_2022.03.05.md)
