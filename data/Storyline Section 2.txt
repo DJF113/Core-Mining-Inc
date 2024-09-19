@@ -261,7 +261,7 @@ mission "CMI S2 Jump Drive 2"
 				`	"I'm on my way!"`
 					goto nervous
 			label nervous
-			`	"Good!" Michael replies. "One more thing. This scientist is very paranoid and always afraid that someone is out to get him. So don't be suprised if he's somewhat... peculiar."`
+			`	"Good!" Michael replies. "One more thing. This scientist is very paranoid and always afraid that someone is out to get him. So don't be surprised if he's somewhat... peculiar."`
 			choice
 				`	"Okay!"`
 					accept
@@ -855,7 +855,7 @@ mission "CMI S2 Moving 5"
 
 mission "CMI S2 Moving 6"
 	name "Evasive Actions II"
-	description "See if the plan of unloading empty crate at the staion worked."
+	description "See if the plan of unloading empty crates at the station worked."
 	autosave
 	source "Core Mining Station 1"
 	destination Keselrig

@@ -295,8 +295,8 @@ mission "CMI Taxi 10"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			"	You head over to the temporary spaceport, a Star Queen luxury liner parked on the tarmac. Michael waves you over to a corner booth seperate from the rest of the lounge."
-			`	"I've got a rush job for you <first>." he says, "I need you to head over to Maker in the Delta Capricorni system and pick up some important cargo for me."`
+			"	You head over to the temporary spaceport, a Star Queen luxury liner parked on the tarmac. Michael waves you over to a corner booth separate from the rest of the lounge."
+			`	"I've got a rush job for you, <first>," he says. "I need you to head over to Maker in the Delta Capricorni system and pick up some important cargo for me."`
 			`	"Sure!" you say. "What exactly is it?"`
 			`	"I can't tell you at this moment, but I'll be able to a little later on." Michael says in a secretive tone. "So, can you do it?"`
 			choice

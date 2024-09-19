@@ -118,7 +118,7 @@ mission "Hostile Takeover 5"
 				accept
 	on complete
 		dialog
-			`You see a cluster of CMI ships at the edge of the spaceport, so you manuever your ship to land with them. "Meet me in the spaceport when you're finished refueling, we're going to have lots of work to do!" says Michael.`
+			`You see a cluster of CMI ships at the edge of the spaceport, so you maneuver your ship to land with them. "Meet me in the spaceport when you're finished refueling, we're going to have lots of work to do!" says Michael.`
 
 mission "CMI Rebuilding 1"
 	name Rebuilding
@@ -134,7 +134,7 @@ mission "CMI Rebuilding 1"
 		conversation
 			"You meet Michael and the rest of the CMI employees in a private conference room in the spaceport. You hear a lot of excited chatter from everyone who had never visited the Hai before, but all of that is hushed when a Hai walks into the room."
 			`	"This is a friend of mine," says Michael. "He has offered to lend me the money we need to purchase some more freighters to get into the cargo hauling business. Now, before you get worried, we're not giving in to John Summers or any of the rest of them. This is a means to provide us with a steady income while we plan our next move."`
-			"	The Hai gives Michael a credit chip and then leaves the room, seemingly embarrased with all of the attention he was getting."
+			"	The Hai gives Michael a credit chip and then leaves the room, seemingly embarrassed with all of the attention he was getting."
 			`	"Well <first>," says Michael, "Are you ready to head to <destination>? Whitney and I are planning to get everything set up to run our hauling business from there."`
 			choice
 				"	Sure! Let's go!"
@@ -182,7 +182,7 @@ mission "CMI Rebuilding 3"
 			"You are sitting in the spaceport for a short time until Whitney walks in and sits down."
 			`	"Well, Captain <last>." she says. "It looks like we're going to be heading to Reunion to pick up some crates instead of heading straight back to Stonebreak."`
 			`	"What about the freighters?" you ask.`
-			`	"I got a transmission from Michael, apparently he puchased some light warships as well as the freighters, so they will be escorting them back." she replies. "Are you ready to get going?"`
+			`	"I got a transmission from Michael, apparently he purchased some light warships as well as the freighters, so they will be escorting them back." she replies. "Are you ready to get going?"`
 			choice
 				"	Yes, let's get going!"
 					accept
@@ -337,7 +337,7 @@ mission "CMI Rebel Surveillance 4"
 	on offer
 		conversation
 			"This time, you aren't detected by the Syndicate, and the sensor installation goes well. Carlos checks over his readings as you get ready to leave."
-			`	"All systems are in good working order." he says. "As soon as the other ship deploys the surveillance drone in the Moktar system, we'll know everything about all of the ships coming through this sytem."`
+			`	"All systems are in good working order." he says. "As soon as the other ship deploys the surveillance drone in the Moktar system, we'll know everything about all of the ships coming through this system."`
 			`	"Great work everyone." says Whitney. "Now, let's head back and report to Michael."`
 				launch
 
@@ -412,7 +412,7 @@ mission "CMI Rebel Surveillance 6"
 			"	You decide to wait and see who it is, so you head back to your seat."
 				goto wait
 			label wait
-			"	You wait for quite a while, and are about ready to give up and head back to your ship when a vaguely familar figure walks into the room, looking over his shoulder constantly. He is wearing a long trench coat, big sunglasses, and a very fake wig."
+			"	You wait for quite a while, and are about ready to give up and head back to your ship when a vaguely familiar figure walks into the room, looking over his shoulder constantly. He is wearing a long trench coat, big sunglasses, and a very fake wig."
 			`	He sits down across from you and peers at you from over the dark glasses. "Captain <last>?!" he says.`
 			`	"Doctor Livingstone?" you say. "What are you doing here?"`
 			`	"I'm the informant you're looking for." he replies. "Can you please get me out of here? Every minute we spend here is dangerous."`
@@ -766,7 +766,7 @@ mission "CMI Rebel Surveillance 15"
 		dialog "You have failed an essential mission. To continue the storyline, load from your last game save."
 	on offer
 		conversation
-			`You walk into the spaceport on Skillet wiping the sweat off of your face. You see the restaurant that you were told to wait at, and go inside. You pause a minute until your eyes adjust to the darker environment, and you notice a very familiar figure in a trench coat and glasses in the corner. You walk over and sit down next to him. "I see you've stoppped wearing the wig." you say.`
+			`You walk into the spaceport on Skillet wiping the sweat off of your face. You see the restaurant that you were told to wait at, and go inside. You pause a minute until your eyes adjust to the darker environment, and you notice a very familiar figure in a trench coat and glasses in the corner. You walk over and sit down next to him. "I see you've stopped wearing the wig." you say.`
 			`	"It wasn't by choice." he replies. "I got so warm that I almost collapsed, and I decided that continuing my mission was more important than staying fully disguised."`
 			"	You manage to keep a straight face as you agree with him, and ask him what information he has for you."
 			`	He looks around nervously before pulling out a data chip and showing it to you. "On this chip are internal communications between John Summers and several of the other conspirators detailing their plans for the takeover. This evidence should be enough to convince any court in the galaxy."`
@@ -983,7 +983,7 @@ mission "Return to Stormhold 3"
 					goto yes
 			label yes
 			`	"Then let's get going!" he says.`
-			"	Everyone climbs into the two remaining ships, and start powering up the sytems."
+			"	Everyone climbs into the two remaining ships, and start powering up the systems."
 			`	"We've got a major problem." says the lieutenant. "I'm reading at least five ships in orbit right now."`
 			`	Michael slams his fist against the side of the ship in frustration. "I knew it was too good to be true!"`
 			`	"Didn't you say that you had ordered CMI ships to meet us here?" you say.`
@@ -1066,7 +1066,7 @@ mission "Return to Stormhold 3"
 		ship Quicksilver
 		ship Splinter
 		ship Argosy
-		dialog "The main fleet is destoyed! Make sure to mop up any remaining ships, and land on the planet for further instructions."
+		dialog "The main fleet is destroyed! Make sure to mop up any remaining ships, and land on the planet for further instructions."
 	on visit
 		dialog
 			"There is still fighting above the planet! Better take off and help."
@@ -1312,7 +1312,7 @@ mission "Coming Storm 3"
 	on offer
 		conversation
 			"Several Syndicate personnel meet you as you land. Apparently Michael has notified them, because they already appear to be familiar with the situation. You follow them to an office in the spaceport, and sit down across from some high ranking Syndicate officers."
-			`	"What is going on?" asks Michael. "You help us a short rime ago, and now you're attacking us?"`
+			`	"What is going on?" asks Michael. "You help us a short time ago, and now you're attacking us?"`
 			`	The Syndicate leaders seem taken back. "We what?"`
 			`	"You heard me!" says Michael. "I've lost two ships and had more damaged by Syndicate ships."`
 			`	The Syndicate leaders look at each other before replying. "We are currently in a position similar to the one you were a short while ago."`
