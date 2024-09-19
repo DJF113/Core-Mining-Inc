@@ -200,7 +200,7 @@ mission "CMI Taxi 7"
 		event "signed up with CMI"
 		payment 20000
 		conversation
-			"	Michael steps inside your ship as you land. You notice that work such as the reinforced landing pads and temporary storage building has already completed."
+			"	Michael steps inside your ship as you land. You notice that work such as the reinforced landing pads and temporary storage building has already been completed."
 			`	"I'd like to talk to you about something," says Michael, "You've been taking me around here and there for a while and I really like your skillset. I'd like to offer you a job with CMI as a contract pilot. I just want you to try it out for a little while and see if you like it. Your salary is starting out at 5000 cr."`
 			`	Michael steps back out of the ship, leaving you somewhat confused as to what just happened. Suddenly Michael's head appears around the corner. "Meet me in the ship we're using as a spaceport and lounge in about 30 minutes to talk some business." he says, then heads off to scold a worker for dropping a crate.`
 
