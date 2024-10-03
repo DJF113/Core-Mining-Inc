@@ -1,3 +1,8 @@
+# Development Information
+I've decided to discontinue my use of GitHub due to their AI policies, so I'm no longer going to be updating this project here. I've deleted most of my private repos and personal coding projects, but I decided to leave this one up in case anyone is interested.
+
+As I can find time I'm still working on this project, so what is here could be considered a demo of what I hope to have completed sometime in the future. When I have it closer to completion I do plan to release everything.
+
 # Core Mining, Inc.
 The Core Mining, Inc. mod adds a storyline that offers you the chance to work for a newly
 started company by the same name. You start with them from the very beginning and help build
@@ -25,10 +30,6 @@ as well.
 1.0.0
  -Full release.
 # Further Information
-Do you have any questions, comments or bugs, or just want to chat? Check out the Core Mining Discord in the link below.
-
-Discord: https://discord.com/invite/EjF6Zhpc5C
-
 Before filing a bug report, please check the Known Issues section at the bottom of the Readme to confirm that your issue has not been reported already.
 
 ## Developer Updates
